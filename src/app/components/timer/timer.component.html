@@ -1,1 +1,7 @@
-<p>timer works!</p>
+
+<div class="min-w-[500px]">
+    <app-card>
+        <p class="text-6xl text-center mb-3">{{timeFormatted()}}</p>
+        <app-progres-bar [percentage]="percentage()"></app-progres-bar>
+    </app-card>
+</div>

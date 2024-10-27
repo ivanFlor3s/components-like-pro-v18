@@ -1,13 +1,12 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { CardComponent, ProgresBarComponent } from './components';
-import { interval, takeUntil } from 'rxjs';
-import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { CardComponent, ProgresBarComponent, TimerComponent } from './components';
+import { interval } from 'rxjs';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CardComponent, ProgresBarComponent],
+  imports: [RouterOutlet, CardComponent, ProgresBarComponent, TimerComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

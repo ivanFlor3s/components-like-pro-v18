@@ -1,9 +1,11 @@
-<h1 class="text-center text-emerald-500">Angular like pro</h1>
+<div class="flex flex-row justify-center items-baseline">
+  <h1 class="text-center text-6xl bg-gradient-to-r from-pink-500 via-rose-600-500 to-indigo-700 text-indigo-500 text-transparent bg-clip-text font-semibold">Timers</h1>
+  <span class="bg-gradient-to-r from-pink-500 via-rose-600-500 to-indigo-700 text-indigo-500 text-transparent bg-clip-text font-semibold"> with signals </span>
+</div>
 <div class="container mx-auto">
-  <app-card>
-    <h1>Buenas maqujinas como estamos</h1>
-    <app-progres-bar [percentage]="value()"></app-progres-bar>
-    <app-progres-bar [percentage]="100"></app-progres-bar>
-  </app-card>
-
+  <div class="flex flex-col space-y-3 items-center">
+    <app-timer [initSeconds]="10"></app-timer>
+    <app-timer [initSeconds]="60"></app-timer>
+    <app-timer [initSeconds]="120"></app-timer>
+  </div>
 </div>
