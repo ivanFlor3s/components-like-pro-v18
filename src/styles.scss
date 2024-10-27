@@ -2,3 +2,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .angular-gradient {
+        @apply from-pink-500 via-rose-600 to-indigo-700 text-indigo-500
+    }
+}

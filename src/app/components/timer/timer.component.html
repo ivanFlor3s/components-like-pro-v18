@@ -3,5 +3,9 @@
     <app-card>
         <p class="text-6xl text-center mb-3">{{timeFormatted()}}</p>
         <app-progres-bar [percentage]="percentage()"></app-progres-bar>
+        <div class="flex justify-between mt-4">
+            <button class="border bg-blue-500 px-3 rounded-lg py-1 text-white" (click)="restart()"> Restart </button>
+            <button class="border bg-blue-500 px-3 rounded-lg py-1 text-white" (click)="togglePause()"> {{ pause()  ?  'Play' :'Pause'}} </button>
+        </div>
     </app-card>
 </div>

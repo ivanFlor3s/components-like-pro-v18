@@ -47,4 +47,11 @@ export class TimerComponent {
         this.countdown.update(value => value - 1)
       })
   }
+
+  togglePause(){
+   this.pause.update( v => !v) 
+  }
+  restart() {
+    this.countdown.set(this.initSeconds())
+  }
 }
